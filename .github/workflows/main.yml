@@ -3,25 +3,25 @@ name: Modify Framework and Services
 on:
   workflow_dispatch:
     inputs:
-      framework_jar_url:https://drive.usercontent.google.com/download?id=191MiiuRtZiRasXhUTXfLVKIrRSSwegsA&export=download
-        description:'URL to download framework.jar'
-        required:true
-      services_jar_url:https://drive.usercontent.google.com/download?id=1931EBDPtJmf0G0ZKtevQ2OPKJSOtt8pp&export=download
-        description:'URL to download services.jar'
-        required:true
-      miui_services_jar_url:https://drive.usercontent.google.com/download?id=19NnmEYMEon6R_2gGKhvKccvo4pJXvz_M&export=download
-        description:'URL to download miui-services.jar'
-        required:true
-      android_api_level:35
-        description:'Android API level'
-        required:true
-        default:'35'
-      custom_device_name:tapas
-        description:'Custom device name (optional)'
-        required:false
-      custom_version:OS2.0.9.0.VMTMIXM
-        description:'Custom version (optional)'
-        required:false
+      framework_jar_url:
+        description: 'URL to download framework.jar'
+        required: true
+      services_jar_url:
+        description: 'URL to download services.jar'
+        required: true
+      miui_services_jar_url:
+        description: 'URL to download miui-services.jar'
+        required: true
+      android_api_level:
+        description: 'Android API level'
+        required: true
+        default: '35'
+      custom_device_name:
+        description: 'Custom device name (optional)'
+        required: false
+      custom_version:
+        description: 'Custom version (optional)'
+        required: false
 
 jobs:
   build:
